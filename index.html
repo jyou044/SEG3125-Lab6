@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<! -- By Jason You , Student #: 300056239, Lab 1 User Interface Questionnaire --> 
+<html>  
+  <head>
+    
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+ </head>
+  
+ <body>
+   <h1 style="font-family:verdana">
+     <center>
+       <b>User Interface Questionnaire</b>
+     </center>
+   </h1>
+   
+   <p style="font-family:verdana">
+     <center>
+       <b>This questionnaire is for feedback based on the quality of the User Interface Experience of the Official Toronto Bluejays Website.</b>
+     </center>
+   </p>
+   
+   <a style="font-family:verdana" href="https://www.mlb.com/bluejays" target="_blank"><p style="text-align:center">Link to the Official Toronto Bluejays Website</p></a>
+   <img src="Bluejays.PNG" alt="Official Toronto Bluejays Website Picture" style="width:50%;"><br>
+   
+   <h2 style="font-family:verdana">
+     <center>
+       <b>Questions</b>
+     </center>
+   </h2> <br>
+   
+   <form name="User Interface Questionaire" method="POST">
+     <div style="font-family:verdana">
+       <b>What is your favourite feature of the Toronto Bluejays Website?</b>:<br>
+     <br>
+     <textarea name="comment[body]" rows="10" cols="50" wrap="physical" id="fav_val"></textarea>
+     <br>
+       </div>
+     <div style="font-family:verdana">
+     <br>
+       <b>Were you able to find the player information/highlight videos you were looking for?</b>:<br>
+     <br> 
+      <input type="radio"name="choice"value="yes">Yes<br>
+      <input type="radio"name="choice" value="no">No<br>
+       </div>
+       <div style="font-family:verdana">
+     <br>
+         <b>Which section of the website do you think requires improvement? (Choose one)</b>:<br>
+     <br>
+      <input type="radio" name="improvement" value="video">Video Formatting<br>
+      <input type="radio" name="improvement" value="layout">Overall Layout of the website<br>
+      <input type="radio" name="improvement" value="iconbar">The Icon Bar<br>
+      <input type="radio" name="improvement" value="colour">The colour of the website<br>
+       </div>
+      <div style="font-family:verdana">
+     <br>
+     
+        <b>If you had the choice, what colours other than blue would you have the website be?</b>:<br>
+     <br>
+     <input type="checkbox" name="Purple" value="Purple">Purple<br>
+     <input type="checkbox" name="Orange" value="Orange">Orange<br>
+     <input type="checkbox" name="Yellow" value="Yellow">Yellow<br>
+     <input type="checkbox" name="noChange" value="No Change">No Change<br>
+       </div>
+       <div style="font-family:verdana">
+     <br>
+     
+         <b>Do you think that the Toronto Bluejays website is the best baseball website?</b>:<br>
+     <br>
+     <input type="radio" name="likert" value="strong_agree">Strongly Agree<br>
+     <input type="radio" name="likert" value="agree">Agree<br>
+     <input type="radio" name="likert" value="neutral">Neutral<br>
+     <input type="radio" name="likert" value="disagree">Disagree<br>
+     <input type="radio" name="likert" value="strongly_disagree">Strongly Disagree<br>
+    <br>
+    </div>
+       <div style="font-family:verdana">
+         <b>Additional Comments:</b><br>
+     <br>
+     <textarea name="comment[body]" rows="10" cols="50" wrap="physical" id="comment_text_area"></textarea>
+     <br>
+       </div>
+     <div class="buttons">
+      <button class="submit">Submit</button>
+    </div>
+     
+     <footer>
+       <p><i>Website designed by: Jason You<br> Student #: 300056239</i></p>
+     </footer>
+   </form>
+ </body>
+</html>
