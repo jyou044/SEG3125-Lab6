@@ -46,9 +46,10 @@ module.exports = function(app){
         var highlight = readData("highlight");
         var improvement = readData("improvement");
         var colour = readData("colour");
+        var like = readData("like");
         var best = readData("best");
-        res.render('showResults', {results: [feature,highlight,improvement,colour,best]});
-        console.log([feature,highlight,improvement,colour,best]);
+        res.render('showResults', {results: [feature,highlight,improvement,colour,like,best]});
+        console.log([feature,highlight,improvement,colour,like,best]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
