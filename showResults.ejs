@@ -1,0 +1,40 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Feature</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].feature %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Highlight</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].highlight %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Improvement</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].improvement %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Colour</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].colour %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Best</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].best %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    
+</body>
+</html>
