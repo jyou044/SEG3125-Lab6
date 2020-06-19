@@ -2,16 +2,17 @@
 <! -- By Jason You , Student #: 300056239, Lab 1 User Interface Questionnaire --> 
 <html>  
   <head>
-    
- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
- </head>
+    <title>User Satisfaction Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
   
  <body>
    <h1 style="font-family:verdana">
@@ -25,9 +26,11 @@
        <b>This questionnaire is for feedback based on the quality of the User Interface Experience of the Official Toronto Bluejays Website.</b>
      </center>
    </p>
-   
-   <a style="font-family:verdana" href="https://www.mlb.com/bluejays" target="_blank"><p style="text-align:center">Link to the Official Toronto Bluejays Website</p></a>
+   <center>
+    <a style="font-family:verdana" href="https://www.mlb.com/bluejays" target="_blank"><p style="text-align:center">Link to the Official Toronto Bluejays Website</p></a>
    <img src="Bluejays.PNG" alt="Official Toronto Bluejays Website Picture" style="width:50%;"><br>
+   </center>
+   
    
    <h2 style="font-family:verdana">
      <center>
@@ -35,7 +38,7 @@
      </center>
    </h2> <br>
    
-   <form name="User Interface Questionaire" method="POST">
+   <form target="_blank" action="showResults.html">
      <div style="font-family:verdana">
        <b>What is your favourite feature of the Toronto Bluejays Website?</b>:<br>
      <br>
@@ -89,7 +92,9 @@
  
      <div class="buttons">
       <button class="submit">Submit</button>
+      <p id="thanks"></p>
     </div>
+
      
      <footer>
        <p><i>Website designed by: Jason You<br> Student #: 300056239</i></p>
