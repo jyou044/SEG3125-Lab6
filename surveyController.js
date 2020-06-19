@@ -60,7 +60,7 @@ module.exports = function(app){
     // when a user types SUBMIT in localhost:3000/bluejaysSurvey
     // the action.js code will POST, and what is sent in the POST
     // will be recuperated here, parsed and used to update the data files
-    app.post('/niceSurvey', urlencodedParser, function(req, res){
+    app.post('/bluejaysSurvey', urlencodedParser, function(req, res){
         console.log(req.body);
         var json = req.body;
         for (var key in json){
